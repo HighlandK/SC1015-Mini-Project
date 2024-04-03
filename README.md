@@ -4,7 +4,7 @@ Input data: 28x28 pixel data (784 values) with brightness values ranging from 0-
 Output: A digit from 0-9.
 
 Methods used: 
-Decision Tree (88% accuracy)
+Decision Tree (88% accuracy)\n
 Convolutional Neural Network (Up to 97% accuracy)
 
 Dataset used:
