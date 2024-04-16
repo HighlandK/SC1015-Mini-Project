@@ -5,6 +5,8 @@ Output: A digit from 0-9.
 
 Methods used: <br>
 Decision Tree (88% accuracy)<br>
+Logistic Regression (92% accuracy)<br>
+K-Nearest Neighbors (97% accuracy)<br>
 Convolutional Neural Network (Up to 97% accuracy)<br><br>
 
 Dataset used:<br>
