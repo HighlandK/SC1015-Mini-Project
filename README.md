@@ -2,86 +2,104 @@
 
 ## Overview
 
-This project is an in-depth exploration into image recognition with a primary focus on the classification of handwritten digits using the MNIST dataset. Leveraging various machine learning models, we aim to demonstrate the process of building, training, and evaluating models in a manner that's accessible to individuals at different stages of their data science journey.
+This is a Mini-Project for SC1015 - Introduction to Data Science and Artificial Intelligence.
+
+In this project, we leverage various machine learning models with the aim of creating a model which can recognise handwritten digits accurately. From the rudimentary Decision Tree Model, we progress towards the Logistic Regression, K-Nearest Neighbours and Convoluted Neural Network models, increasing in accuracy and sophistication each time. This project not only documents our results, but also our growth as data science students. 
 
 ## Dataset
 
-The MNIST dataset, a benchmark for machine learning models, comprises 70,000 images of handwritten digits (60,000 for training and 10,000 for testing). Each image is a 28x28 pixel grayscale picture flattened into a 784-dimensional vector. Labels indicating the actual digit (0-9) accompany each image.
+The MNIST dataset is a common dataset used for training computer vision models. Found on Kaggle, it is graciously contributed by Kaggler Dariel Dato-on. It comprises 70,000 images of handwritten digits (60,000 for training and 10,000 for testing). Each image is a 28x28 pixel grayscale picture flattened into a 784-dimensional vector. Labels indicating the actual digit (0-9) accompany each image. Altogether, the dataset contains 70,000 rows and 785 columns. For the best experience, please view the source code in the following order: 
 
-## Feature Engineering and Preprocessing
-
-Our preprocessing routine involves:
-
-- Normalizing pixel values to aid in model convergence.
-- One-hot encoding of categorical labels for compatibility with model outputs.
-
-## Machine Learning Models and Implementation
-
-We have crafted a suite of Jupyter Notebooks to document the implementation and evaluation of the following algorithms:
-
-### Convolutional Neural Networks (CNN)
-
-We implement a neural network with a hyperbolic tangent activation and a softmax output layer, training it using stochastic gradient descent. Various architectures with different numbers of hidden units (32, 64, 128, 256, 512, 1024) are evaluated to understand the impact of model complexity on performance.
-
-### Decision Tree
-
-A Decision Tree Classifier is implemented with a focus on understanding the influence of depth on decision-making and overall accuracy. The model's decision process is visualized as a tree diagram.
-
-### K-Nearest Neighbors (KNN)
-
-KNN is chosen for its simplicity and efficacy in classification tasks. We assess the performance of the model by adjusting the number of neighbors.
-
-### Logistic Regression
-
-A multinomial Logistic Regression model demonstrates a fundamental approach to classification tasks and serves as a benchmark for other, more complex algorithms.
+- [Exploratory Analysis and Data Visualisation](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/Exploratory%20Data%20Analysis%20and%20Data%20Visualisation.ipynb)
+- [Decision Tree](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/decision_tree.ipynb)
+- [Logistic Regression](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/Logistic%20Regression.ipynb)
+- [K-Nearest Neighbours](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/K%20Nearest%20Neighbours.ipynb)
+- [Convoluted Neural Networks (CNN)](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/cnn_code.ipynb)
 
 ## Exploratory Data Analysis and Visualization
 
-The project kicks off with an extensive data analysis phase where we explore the dataset's characteristics. Visualization efforts include:
+The project begins with exploratory data analysis, where we explore the key characteristics of the dataset. These include: 
+- Size of Dataset (Test and Train)
+- Frequency of digit occurrences in dataset
+- Ink Density (Proxied using pixel intensity)
+- Frequency of pixel use
 
-- Displaying random samples of digits.
-- Plotting the average image for each digit class.
-- Graphing frequency distributions and pixel intensity box plots.
+To do so, we have utilised the following data visualisation tools:
+- Heatmap
+- Box Plot
+- Bar Chart
 
-## Training and Evaluation Metrics
+We have also done the following to prepare our data:
+- [Data Normalisation] - Normalising pixel values
+- [Data Grouping] - Grouping the data according to their digit labels
+- [Data Reshaping] - One-hot-encoding
 
-Each model is rigorously trained and evaluated. Training progress is monitored through loss and accuracy curves. Post-training, models are evaluated on unseen test data with the following metrics:
+### Decision Tree
 
-- Accuracy
-- Recall
-- Precision
-- F1-Score
+The first model we have implemented is the Decision Tree Classifier, existing in the sklearn library.  After multiple tries exploring different tree depth, we have determined 18 as the optimal depth of the tree - after which, the prediction accuracy of the tree decreases. 
 
-These metrics, derived from the classification report, offer insight into the generalizability and performance of each model.
+On training the model, we visualise the decision process of the Decision Tree Classifier using a tree diagram.
+
+Under the Decision Tree Classifier, we find that the maximum total accuracy attained is 88.29%.
+
+### Logistic Regression
+
+The second model we have implemented (out of syllabus) is the Logistic Regression model, also existing in the sklearn library. We conduct multinomial logistic regression, because we have more than two unordered types for our dependent variable. 
+
+Under the Logistic Regression model, we find that the maximum total accuracy attained is 92.07%.
+
+
+### K-Nearest Neighbours (KNN)
+
+The third model we have implemented (out of syllabus) is the K-Nearest Neighbours model, existing in the sklearn library. In this model, we have set the number of neighbours as 5.
+
+Under the K-Nearest Neighbours model, we find that the maximum total accuracy attained is 96.88%.
+
+### Convoluted Neural Networks (CNN)
+
+The fourth model we have implemented (out of syllabus) is the Convoluted Neural Network, which we have trained using stochastic gradient descent. Various numbers of nodes in the hidden layer (32, 64, 128, 256, 512, 1024) were implemented and evaluated. Each time we have plotted side-by-side graphs to visualise the improvements in the cross entropy loss as well as improvements in model prediction accuracy.
+
+On evaluating the model, we have found that the maximum attained total accuracy for the Convoluted Neural Network is 97.81%, with 1024 nodes in the hidden layer. 
+
 
 ## Results
 
-The results section in each notebook offers a detailed account of the model's performance, with comparative analysis showcasing how complexity affects accuracy and overfitting tendencies.
+- The prediction accuracies of the models rank in the following order (highest to lowest):
+    - Convoluted Neural Network (CNN)
+    - K-Nearest Neighbours (KNN)
+    - Logistic Regression
+    - Decision Tree
+- Most of the models have consistent trouble prediction the digit '8' accurately, while the digit '1' enjoys the highest prediction accuracy. This could be due to the similarities of 8 with other numbers (e.g 6, 9 etc.) as compared to 1 with a more distinctive look.
+- The models have a threshold, after which, their prediction accuracies do not increase any further. This is true for all the models used in this project.  
+
 
 ## Contributions
 
-Our collaborative effort reflects in each notebook, with clearly documented code, comments, and markdown cells explaining the rationale behind model choices and hyperparameters. Individual contributions are acknowledged where significant.
+- @Unknown-Blaze - Convoluted Neural Network (CNN)
+- @y4y4y4y4y4 - Decision Tree, Logistic Regression, K-Nearest Neighbours (CNN)
+- @HighlandK - Exploratory Data Analysis and Visualisation, Video Materials
 
 ## Repository Structure
 
-- **Code**: Separate Jupyter Notebooks for each model, providing a step-by-step guide through the process.
+- **Code**: Separate Jupyter Notebooks for each model, affixed with comments explaining the process.
 - **Data**: `mnist_train.csv` and `mnist_test.csv` files containing the dataset.
 - **Images**: Sample images from the dataset and generated plots.
 
-## References and Acknowledgements
+## References
 
-We have referenced numerous sources, including academic papers, online tutorials, and documentation for Python libraries (NumPy, pandas, scikit-learn, Matplotlib). These references are cited inline where relevant.
+- https://www.kaggle.com/datasets/oddrationale/mnist-in-csv/data
+- https://medium.com/@AMustafa4983/handwritten-digit-recognition-a-beginners-guide-638e0995c826
+- https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
+- https://medium.com/@AMustafa4983/handwritten-digit-recognition-a-beginners-guide-638e0995c826
 
 ## Quick Start Guide
 
 To dive into the project:
 
-1. Ensure Python and all necessary libraries are installed.
-2. Clone the repository and navigate to the respective notebook directory.
-3. Execute the notebooks to replicate our findings or experiment with different model configurations.
+1. Clone the repository.
+2. Execute the notebooks to replicate our findings or experiment with different model configurations!
 
-## Conclusion and Future Work
+## Conclusion
 
-The project not only highlights the nuances of machine learning in image recognition but also serves as a guide for implementing and evaluating different algorithms. The analysis and comparison of results pave the way for future work, which may involve deeper architectures, ensemble methods, or advanced preprocessing techniques.
+From the results of the project, full automation in cheque data-entry is still not possible, but digit recognition can aid in performing the primary data entry for cheques, with bank staff assisting to confirm the information. We hope you have a good time with the repository! :)
 
-**Time for a Coffee Break?**: We believe in keeping our documentation precise yet informative. Take a moment to grab a coffee and explore our findings, which should take no more than a leisurely 5-minute break to comprehend!
