@@ -13,7 +13,7 @@ In this project, we leverage various machine learning models with the aim of cre
 
 ## Dataset
 
-The MNIST dataset is a common dataset used for training computer vision models. Found on Kaggle, it is graciously contributed by Kaggler Dariel Dato-on. It comprises 70,000 images of handwritten digits (60,000 for training and 10,000 for testing). Each image is a 28x28 pixel grayscale picture flattened into a 784-dimensional vector. Labels indicating the actual digit (0-9) accompany each image. Altogether, the dataset contains 70,000 rows and 785 columns. For the best experience, please view the source code in the following order: 
+The MNIST dataset is a common dataset used for training computer vision models. Found on Kaggle, it is graciously contributed by Kaggler Dariel Dato-on. It comprises 70,000 images of handwritten digits (60,000 for training and 10,000 for testing - all independent). Each image is a 28x28 pixel grayscale picture flattened into a 784-dimensional vector. Labels indicating the actual digit (0-9) accompany each image. Altogether, the dataset contains 70,000 rows and 785 columns. For the best experience, please view the source code in the following order: 
 
 - [Exploratory Analysis and Data Visualisation](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/Exploratory%20Data%20Analysis%20and%20Data%20Visualisation.ipynb)
 - [Decision Tree](https://github.com/Unknown-Blaze/SC1015-Mini-Project/blob/main/decision_tree.ipynb)
@@ -90,9 +90,9 @@ From the results of the project, full automation in cheque data-entry is still n
 
 ## Contributions
 
-- @Unknown-Blaze - Convoluted Neural Network (CNN)
-- @y4y4y4y4y4 - Decision Tree, Logistic Regression, K-Nearest Neighbours (CNN)
-- @HighlandK - Exploratory Data Analysis and Visualisation, Video Materials
+- Ganesh Rudra Prasadh (@Unknown-Blaze) - Convoluted Neural Network (CNN) and Github organisation
+- Kow Zi Ting (@y4y4y4y4y4) - Decision Tree, Logistic Regression, K-Nearest Neighbours (KNN) analysis
+- @HighlandK - Exploratory Data Analysis and Visualisation, Complete video editing and overall compilation
 
 ## Repository Structure
 
