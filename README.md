@@ -114,4 +114,4 @@ To dive into the project:
 
 1. Clone the repository.
 2. Execute the notebooks to replicate our findings or experiment with different model configurations!
-3. We hope you have a good time with the repository! :)
+3. We hope you have a good time with the repository! :D
