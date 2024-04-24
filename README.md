@@ -77,6 +77,16 @@ On evaluating the model, we have found that the maximum attained total accuracy 
 - Most of the models have consistent trouble prediction the digit '8' accurately, while the digit '1' enjoys the highest prediction accuracy. This could be due to the similarities of 8 with other numbers (e.g 6, 9 etc.) as compared to 1 with a more distinctive look.
 - The models have a threshold, after which, their prediction accuracies do not increase any further. This is true for all the models used in this project.  
 
+## Conclusion
+
+From the results of the project, full automation in cheque data-entry is still not possible, but digit recognition can aid in performing the primary data entry for cheques, with bank staff assisting to confirm the information. 
+
+## What did we learn from this project?
+
+- K-Nearest Neighbours from sklearn
+- Logistic Regression from sklearn
+- Convoluted Neural Network (CNN)
+- Normalising values
 
 ## Contributions
 
@@ -103,8 +113,4 @@ To dive into the project:
 
 1. Clone the repository.
 2. Execute the notebooks to replicate our findings or experiment with different model configurations!
-
-## Conclusion
-
-From the results of the project, full automation in cheque data-entry is still not possible, but digit recognition can aid in performing the primary data entry for cheques, with bank staff assisting to confirm the information. We hope you have a good time with the repository! :)
-
+3. We hope you have a good time with the repository! :)
