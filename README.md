@@ -64,7 +64,7 @@ Under the K-Nearest Neighbours model, we find that the maximum total accuracy at
 
 The fourth model we have implemented (out of syllabus) is the Convoluted Neural Network, which we have trained using stochastic gradient descent. Various numbers of nodes in the hidden layer (32, 64, 128, 256, 512, 1024) were implemented and evaluated. Each time we have plotted side-by-side graphs to visualise the improvements in the cross entropy loss as well as improvements in model prediction accuracy.
 
-On evaluating the model, we have found that the maximum attained total accuracy for the Convoluted Neural Network is 97.81%, with 1024 nodes in the hidden layer. 
+On evaluating the model, we have found that the maximum attained total accuracy for the Convoluted Neural Network is 97.92%, with 1024 nodes in the hidden layer. 
 
 
 ## Results
