@@ -6,6 +6,11 @@ This is a Mini-Project for SC1015 - Introduction to Data Science and Artificial 
 
 In this project, we leverage various machine learning models with the aim of creating a model which can recognise handwritten digits accurately. From the rudimentary Decision Tree Model, we progress towards the Logistic Regression, K-Nearest Neighbours and Convoluted Neural Network models, increasing in accuracy and sophistication each time. This project not only documents our results, but also our growth as data science students. 
 
+## Problem Definition
+
+- How might we leverage machine learning to automate the data entry process for cheques?
+- Which model might be best to do so?
+
 ## Dataset
 
 The MNIST dataset is a common dataset used for training computer vision models. Found on Kaggle, it is graciously contributed by Kaggler Dariel Dato-on. It comprises 70,000 images of handwritten digits (60,000 for training and 10,000 for testing). Each image is a 28x28 pixel grayscale picture flattened into a 784-dimensional vector. Labels indicating the actual digit (0-9) accompany each image. Altogether, the dataset contains 70,000 rows and 785 columns. For the best experience, please view the source code in the following order: 
@@ -72,6 +77,16 @@ On evaluating the model, we have found that the maximum attained total accuracy 
 - Most of the models have consistent trouble prediction the digit '8' accurately, while the digit '1' enjoys the highest prediction accuracy. This could be due to the similarities of 8 with other numbers (e.g 6, 9 etc.) as compared to 1 with a more distinctive look.
 - The models have a threshold, after which, their prediction accuracies do not increase any further. This is true for all the models used in this project.  
 
+## Conclusion
+
+From the results of the project, full automation in cheque data-entry is still not possible, but digit recognition can aid in performing the primary data entry for cheques, with bank staff assisting to confirm the information. 
+
+## What did we learn from this project?
+
+- K-Nearest Neighbours from sklearn
+- Logistic Regression from sklearn
+- Convoluted Neural Network (CNN)
+- Normalising values
 
 ## Contributions
 
@@ -98,8 +113,4 @@ To dive into the project:
 
 1. Clone the repository.
 2. Execute the notebooks to replicate our findings or experiment with different model configurations!
-
-## Conclusion
-
-From the results of the project, full automation in cheque data-entry is still not possible, but digit recognition can aid in performing the primary data entry for cheques, with bank staff assisting to confirm the information. We hope you have a good time with the repository! :)
-
+3. We hope you have a good time with the repository! :)
